@@ -25,7 +25,7 @@ SECRET_KEY = 'au90mf-+9we(f0@40v^+141)rsvrzr)&kuetm+2cds_fo&-4(='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'skini.pythonanywhere.com']
 
 
 
