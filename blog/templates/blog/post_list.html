@@ -1,14 +1,39 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<p style = "font-size: 2em;  padding-right: 50px; color: #0F8687;"> <br><u><strong>Welcome!</strong></u></p></br>
+<p style = "font-size: 1.5em;  padding-right: 50px; color: #0F8687;">
 
+     Hello! I'm Skini. Here, on this blog, I'm going to have a lot of fun with writing, and you can be a part of it all! Just check out the blog every two weeks or so. I'm going to post poetry, prose, fiction
+     and sometimes, if there's a topic that I feel strongly about, you'll find some non-fiction too! Together, we can explore the majestic world of literature. I promise, you'll love it!
+     Now enough with this intro. Lets jump staight into the rabbit hole! (get it?)
+     <br>
+     <strong><u>Note:</u></strong>  I'm a student studying in school. So, remember, sometimes, the posts might be delayed. But don't worry! When I post, it will be worthwhile reading. And that's a promise!
+</p>
+</br>
+<br>
+</br>
 {% for post in posts %}
     <div class="post">
       <div class="date">
         <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         <p><u>Published: {{ post.published_date }}</u></p>
-        
+        <br>
+        </br>
+
     </div>
 {% endfor %}
+<p style = "font-size: 2em; padding-left: 15px; color: 0F8687;">
+<br>
+</br>
 
+
+<u><strong>ACKNOWLEDGMENTS</strong></u></p>
+<br>
+
+<p style = "font-size: 1.25em; padding-left: 15px; color: 0F8687;">
+Huge thanks to the <em><strong>Django Girls tutorial</strong></em> <u>(and no I'm not a girl)</u>, <em><strong>Openwisp</strong></em> and <em><strong>Google Code In</strong></em>
+for making this blog possible. Not to forget, <em><strong> Pythonanywhere</strong></em> for running this site, <em><strong>Github</strong></em> for hosting my code and finally, <strong><u>my music teacher for giving me the best
+nick name ever!</u></strong></p>
+</br>
 {% endblock %}
